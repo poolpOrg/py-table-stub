@@ -17,17 +17,17 @@
 
 from opensmtpd import table
 
-def check(token, service, key):
+def check(token, table_name, service, key):
     #table.boolean(token, True)
     #table.boolean(token, True)
     table.failure(token)
 
-def lookup(token, service, key):
+def lookup(token, table_name, service, key):
     table.result(token, "foobar")
     #table.result(token)
     #table.failure(token)
 
-def fetch(token, service):
+def fetch(token, table_name, service):
     table.result(token, "foobar")
     #table.result(token)
     #table.failure(token)
